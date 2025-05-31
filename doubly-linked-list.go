@@ -291,6 +291,7 @@ func (dl *doublyLinkedList) Remove(node *Node) any {
 
 	node.Next = nil
 	node.Prev = nil
+	dl.Size--
 
 	return node.Val
 }
